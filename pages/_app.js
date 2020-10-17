@@ -1,7 +1,15 @@
-import '../styles/globals.css'
+import useNormalizeStyles from "../assets/styles/normalize.style";
+import useGlobalStyles from "../assets/styles/global.style";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+  useNormalizeStyles();
+  const style = useGlobalStyles();
 
-export default MyApp
+  return (
+    <div className={style.root}>
+      <Component {...pageProps} />
+    </div>
+  );
+};
+
+export default App;
