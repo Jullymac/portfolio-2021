@@ -1,6 +1,6 @@
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/styles";
-import { PAGE_DEFAULT_TITLE } from "../constants/configs";
+import { CONFIG_URL, PAGE_DEFAULT_TITLE } from "../constants/configs";
 
 class Document extends NextDocument {
   static async getInitialProps(ctx) {
@@ -47,13 +47,16 @@ class Document extends NextDocument {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff" />
           <meta property="og:title" content={PAGE_DEFAULT_TITLE} />
-          <meta property="og:url" content="https://jullymac.com" />
+          <meta property="og:url" content={CONFIG_URL} />
           <meta property="og:type" content="website" />
           <meta
             property="og:description"
             content="Social media links and blog posts"
           />
-          <meta property="og:image" content="/apple-touch-icon.png" />
+          <meta
+            property="og:image"
+            content={`${CONFIG_URL}/apple-touch-icon.png`}
+          />
           <meta property="og:image:width" content="120" />
           <meta property="og:image:height" content="120" />
         </Head>
