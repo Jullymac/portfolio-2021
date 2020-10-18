@@ -54,6 +54,8 @@ class Document extends NextDocument {
             content="Social media links and blog posts"
           />
           <meta property="og:image" content="/apple-touch-icon.png" />
+          <meta property="og:image:width" content="120" />
+          <meta property="og:image:height" content="120" />
         </Head>
         <body>
           <Main />
