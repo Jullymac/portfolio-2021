@@ -55,7 +55,7 @@ class Document extends NextDocument {
           />
           <meta
             property="og:image"
-            content={`${CONFIG_URL}/apple-touch-icon.png`}
+            content={`${CONFIG_URL}/logo-200x200.jpg`}
           />
           <meta property="og:image:width" content="120" />
           <meta property="og:image:height" content="120" />
