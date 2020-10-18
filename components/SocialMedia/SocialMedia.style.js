@@ -4,8 +4,11 @@ export default makeStyles(
   {
     root: {
       textAlign: "center",
-      paddingTop: 20,
+      marginTop: 10,
+    },
+    icon: {
+      margin: "10px 7px",
     },
   },
-  { name: "Header" }
+  { name: "SocialMedia" }
 );
