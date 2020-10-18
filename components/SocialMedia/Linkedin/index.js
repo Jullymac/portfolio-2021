@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { FaLinkedin as LinkedinIcon } from "react-icons/fa";
-import { LINK_LINKEDIN } from "../../../Constants/links";
+import { LINK_LINKEDIN } from "../../../constants/links";
 
 const useStyles = makeStyles(
   {

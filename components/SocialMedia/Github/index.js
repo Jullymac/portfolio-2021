@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { FaGithub as GitHubIcon } from "react-icons/fa";
-import { LINK_GITHUB } from "../../../Constants/links";
+import { LINK_GITHUB } from "../../../constants/links";
 
 const useStyles = makeStyles(
   {

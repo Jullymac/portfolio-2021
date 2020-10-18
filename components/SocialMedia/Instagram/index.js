@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { FaInstagramSquare as InstagramIcon } from "react-icons/fa";
-import { LINK_INSTAGRAM } from "../../../Constants/links";
+import { LINK_INSTAGRAM } from "../../../constants/links";
 
 const useStyles = makeStyles(
   {

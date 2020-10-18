@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { FaDev as DevToIcon } from "react-icons/fa";
-import { LINK_DEVTO } from "../../../Constants/links";
+import { LINK_DEVTO } from "../../../constants/links";
 
 const useStyles = makeStyles(
   {

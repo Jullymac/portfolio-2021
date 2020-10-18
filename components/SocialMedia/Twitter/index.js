@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/styles";
 import { FaTwitter as TwitterIcon } from "react-icons/fa";
-import { LINK_TWITTER } from "../../../Constants/links";
+import { LINK_TWITTER } from "../../../constants/links";
 
 const useStyles = makeStyles(
   {
