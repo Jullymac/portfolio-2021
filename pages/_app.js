@@ -1,3 +1,4 @@
+import "typeface-roboto";
 import { useEffect } from "react";
 import Head from "next/head";
 import useNormalizeStyles from "../assets/styles/normalize.style";

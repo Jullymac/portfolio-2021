@@ -3,7 +3,13 @@ import { makeStyles } from "@material-ui/styles";
 export default makeStyles(
   {
     "@global": {
-      html: { lineHeight: 1.15, WebkitTextSizeAdjust: "100%" },
+      "*": {
+        boxSizing: "border-box",
+      },
+      html: {
+        lineHeight: 1.15,
+        WebkitTextSizeAdjust: "100%",
+      },
       body: { margin: "0" },
       main: { display: "block" },
       h1: { fontSize: "2em", margin: "0.67em 0" },
