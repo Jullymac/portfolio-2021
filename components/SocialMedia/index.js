@@ -8,13 +8,13 @@ import useStyles from "./SocialMedia.style";
 const SocialMedia = () => {
   const style = useStyles();
   return (
-    <div className={style.root}>
+    <nav className={style.root}>
       <Github className={style.icon} />
       <Linkedin className={style.icon} />
       <DevTo className={style.icon} />
       <Twitter className={style.icon} />
       <Instagram className={style.icon} />
-    </div>
+    </nav>
   );
 };
 

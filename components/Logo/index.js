@@ -14,7 +14,11 @@ const useStyles = makeStyles(
 
 const Logo = () => {
   const style = useStyles();
-  return <img src={logo} alt="Logo Juliana Macêdo" className={style.image} />;
+  return (
+    <h1>
+      <img src={logo} alt="Juliana Macêdo" className={style.image} />
+    </h1>
+  );
 };
 
 export default Logo;

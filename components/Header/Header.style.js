@@ -4,7 +4,7 @@ export default makeStyles(
   {
     root: {
       textAlign: "center",
-      paddingTop: 20,
+      paddingTop: 1,
     },
   },
   { name: "Header" }

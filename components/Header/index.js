@@ -4,9 +4,9 @@ import useStyles from "./Header.style";
 const Header = () => {
   const style = useStyles();
   return (
-    <div className={style.root}>
+    <header className={style.root}>
       <Logo />
-    </div>
+    </header>
   );
 };
 
