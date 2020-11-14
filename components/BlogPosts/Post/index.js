@@ -19,7 +19,7 @@ const BlogPost = ({ post }) => {
         <a href={linkTo} target="_blank" className={style.description}>
           {post?.description}
         </a>
-        <div className={style.tags}>Tags: {post?.tags}</div>
+        <div className={style.tags}>Tags: {post?.tag_list.join(", ")}</div>
       </div>
     </div>
   );
