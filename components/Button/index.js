@@ -1,5 +1,3 @@
-import { LINK_DEVTO } from "../../../constants/links";
-
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles(
@@ -22,15 +20,15 @@ const useStyles = makeStyles(
   { name: "BlogButton" }
 );
 
-const BlogButton = () => {
+const Button = ({ link, children }) => {
   const style = useStyles();
   return (
     <div className={style.root}>
-      <a href={LINK_DEVTO} target="_blank" className={style.btn}>
-        Check my Dev.to
+      <a href={link} target="_blank" className={style.btn}>
+        {children}
       </a>
     </div>
   );
 };
 
-export default BlogButton;
+export default Button;

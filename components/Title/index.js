@@ -7,12 +7,12 @@ const useStyles = makeStyles(
       marginTop: 0,
     },
   },
-  { name: "BlogPostsTitle" }
+  { name: "Section-Title" }
 );
 
-const BlogPostsTitle = () => {
+const SectionTitle = ({ children }) => {
   const style = useStyles();
-  return <h2 className={style.root}>Latest articles</h2>;
+  return <h2 className={style.root}>{children}</h2>;
 };
 
-export default BlogPostsTitle;
+export default SectionTitle;

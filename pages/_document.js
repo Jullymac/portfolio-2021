@@ -1,3 +1,4 @@
+import React from "react";
 import NextDocument, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/styles";
 import { CONFIG_URL, PAGE_DEFAULT_TITLE } from "../constants/configs";

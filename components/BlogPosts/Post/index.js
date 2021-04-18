@@ -13,9 +13,11 @@ const BlogPost = ({ post }) => {
     <div className={style.root}>
       <a href={linkTo} target="_blank" className={style.cover} />
       <div className={style.details}>
-        <a href={linkTo} target="_blank" className={style.title}>
-          {post?.title}
-        </a>
+        <h3 className={style.title}>
+          <a href={linkTo} target="_blank">
+            {post?.title}
+          </a>
+        </h3>
         <a href={linkTo} target="_blank" className={style.description}>
           {post?.description}
         </a>

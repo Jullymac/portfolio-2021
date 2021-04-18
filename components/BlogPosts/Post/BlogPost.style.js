@@ -38,7 +38,8 @@ export default makeStyles(
     title: {
       fontSize: "1.4em",
       overflowWrap: "break-word",
-      marginBottom: 10,
+      margin: "0 0 10px 0",
+      fontWeight: 400,
       "&:hover": {
         textDecoration: ["underline", "!important"],
       },

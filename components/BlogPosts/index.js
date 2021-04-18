@@ -1,10 +1,9 @@
-import BlogPost from "./Post";
-
-const { default: BlogPostsTitle } = require("./Title");
-
 import { makeStyles } from "@material-ui/styles";
+import BlogPost from "./Post";
 import BlogNoPosts from "./NoPosts";
-import BlogButton from "./Button";
+import Button from "../Button";
+import Title from "../Title";
+import { LINK_DEVTO } from "../../constants/links";
 
 const useStyles = makeStyles(
   {
@@ -22,13 +21,13 @@ const BlogPosts = ({ posts }) => {
   const style = useStyles();
   return (
     <main className={style.root}>
-      <BlogPostsTitle />
+      <Title>Latest articles</Title>
       {posts.length > 0 ? (
-        posts.map((p) => <BlogPost post={p} />)
+        posts.map((p) => <BlogPost key={p.id} post={p} />)
       ) : (
         <BlogNoPosts />
       )}
-      <BlogButton />
+      <Button link={LINK_DEVTO}>Check my Dev.to</Button>
     </main>
   );
 };
